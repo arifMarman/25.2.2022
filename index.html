@@ -1,0 +1,100 @@
+ 
+<!Doctype html>
+<html>
+<head>
+  <title> Registration Form </title>
+</head>
+<body>
+<form action="Reg.php" method="post" enctype="multipart/form-data">
+<fieldset>
+<legend align="left">Registration Form</legend>
+<table>
+<tr>
+ <td>Name</td>
+ <td>
+ <input type="text" placeholder="Enter Your Name" required="required" name="na">
+ </td>
+ </tr>
+<tr>
+ <td>Password</td>
+ <td>
+ <input type="password" placeholder="Enter Your PAssword Here" required="" required name="p2">
+ </td>
+ </tr>
+<tr>
+ <td>Email</td>
+ <td>
+ <input type="Email" placeholder="Enter Email Here" required="required" name="e1">
+ </td>
+ </tr>
+<tr>
+ <td>Date</td>
+ <td>
+ <input type="date" name="d1">
+ </td>
+ </tr>
+<tr>
+ <td>Phone No.</td>
+ <td>
+ <input type="number" placeholder="+880" required="required" name="ph1">
+ </td>
+ </tr>
+<tr>
+ <td>Select Image</td>
+ <td>
+ <input type="file" name="ImageUpload" accept="Image/*" required/>
+ <!-- <?php
+  $filename = $_Files['file']['name'];
+  $location = "upload/".$filename;
+ ?> -->
+ </td>
+ </tr>
+<tr>
+ <td>Gender</td>
+ <td>
+ <input type="radio" name="r1" checked value="male">Male
+ <input type="radio" name="r1" value="femele">Female
+ </td>
+ </tr>
+<tr>
+ <td>Language</td>
+ <td>
+ <input type="checkbox" checked name="c1" value="Hindi">Bangla
+ <input type="checkbox" name="c2" value="English">English
+ </td>
+ </tr>
+<tr>
+ <td>Course</td>
+ <td>
+ <select name="s1">
+ <optgroup label="Web">
+ <option value="WD">Web Design</option>
+ <option value="WDD">Web Design & Development</option>
+ <option value="WAD">Web Application Development</option>
+ </optgroup>
+   
+ <optgroup label="APP">
+ <option value="AD">Application Development</option>
+ <option value="FLU">Flutter</option>
+ </optgroup>
+ </select>
+ </td>
+ </tr>
+<tr>
+ <td>Comment</td>
+ <td>
+ <textarea rows="7" cols="20" value="CM" >
+ </textarea> 
+ </td>
+ </tr>
+<tr>
+ <td>
+ <input type="submit" value="RegisterNow">
+ <input type="reset" value="Refresh">
+ </td>
+ </tr>
+</table>
+</fieldset>
+</form>
+</body>
+</html>
